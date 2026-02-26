@@ -22,6 +22,8 @@ By default, GlobalProtect, the app itself, has the ability to add VPN entries. T
 
 Enterprises, etc, can force a VPN to enabled at all times and cannot be removed as an entry. This means that your administrator can ensure that no more VPN portals are removed, added, or edited. This script tries to disable the VPN entirely, even if your administrator prevents it from being disabled.
 
+Additionally, on Windows, someone might think to clear the app data to clear local VPN entries. It's unknown whether it was like that before in older versions, but in newer versions, local user data are stored somewhere else. The script will attempt too clear it, but it won't work most of the time.
+
 # Payload
 
 1. Kills GlobalProtect related-userspace processes
