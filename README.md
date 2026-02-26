@@ -14,6 +14,14 @@ Due to the nature of this script, it can cause memory consumption & battery drai
 
 Useful for devices who have a VPN installed via GlobalProtect that is configured as `Always-On` and wants to disable it temporaily.
 
+# GlobalProtect
+
+GlobalProtect is a VPN-service used by enterprise's, companies or businesses. The main goal is to ensure that a firewall is always active no matter what internet your connected to. For example: a school laptop connected to the school Wifi will have the same internet restrictions as if the school laptop was connected to your home Wifi. Thats the power of a VPN.
+
+By default, GlobalProtect, the app itself, has the ability to add VPN entries. These VPN entires can be removed by default. You can also add VPN entries, remove VPN entries and edit them. However, GlobalProtect has one enforcement policy. (A VPN entry is esssentially just the VPN portal domain (vpn.example.com), or an IP address).
+
+Enterprises, etc, can force a VPN to enabled at all times and cannot be removed as an entry. This means that your administrator can ensure that no more VPN portals are removed, added, or edited. This script tries to disable the VPN entirely, even if your administrator prevents it from being disabled.
+
 # Payload
 
 1. Kills GlobalProtect related-userspace processes
@@ -93,6 +101,6 @@ Run `main.py`. Once the script is ran, it will automatically run a PowerShell sc
 
 You can keep it on, for as long as you like. But remember, the longer the script runs the more memory the script consumes, and will probably lag your device. Use with caution.
 
-<span style="color:green;">During testing, we found out that stopping the Python script after a while may temporary kill the VPN until the next device reboot, or if GlobalProtect is opened manually.</span>
+**During testing, we found out that stopping the Python script after a while may temporary kill the VPN until the next device reboot, or if GlobalProtect is opened manually.**
 
 It may take more than one minute for the VPN to be fully disabled.
