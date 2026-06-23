@@ -6,7 +6,7 @@
 
 # Description
 
-This is a PowerShell script for Windows that forcefully stops GlobalProtect VPN service by eliminating `PanGPA.exe`, etc. All without administrator.
+This is a PowerShell/Python script for Windows that forcefully stops GlobalProtect VPN service by eliminating `PanGPA.exe`, etc. All without administrator.
 
 Useful for devices who have a VPN installed via GlobalProtect that is configured as `Always-On` and wants to disable it temporaily.
 
