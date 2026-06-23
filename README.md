@@ -22,7 +22,9 @@ Additionally, on Windows, someone might think to clear the app data to clear loc
 
 # Usage
 
-Run `main.ps1`. 
+Run `main.ps1`, or `main.py`.
+
+`main.py` is more reliable. Use if possible. Otherwise, use `main.ps1`.
 
 It may take more than one minute for the VPN to be fully disabled.
 
