@@ -32,5 +32,5 @@ It may take more than one minute for the VPN to be fully disabled.
 
 Palo Alto Networks is aware of this script (as I submitted it as a vulnerability) and it does not qualify as a vulnerability due to the nature of how the bypass is executed.
 
-**Works as of:` 06/22/26*`**
+**Works as of:` 06/22/26*` **
 
